@@ -15,7 +15,7 @@ Try CatGPT at [catgpt.wvd.io](https://catgpt.wvd.io)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1536be40-5407-46cf-bc8b-c6b46910b7a3/deploy-status)](https://app.netlify.com/sites/catgpt/deploys)
 
 ## How?
-The latest in artificial intelligence, MoGeePeeTee uses a neural network and an advanced algorithm to come up with natural-sounding responses.
+The latest in artificial intelligence, MoJeePT uses a neural network and an advanced algorithm to come up with natural-sounding responses.
 
 Not really though, it just returns sassy canned responses. 
 
