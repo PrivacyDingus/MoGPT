@@ -76,15 +76,17 @@
                 chatArea.appendChild(newBubbleContainer);
                 userInput.value = ""; // Clear the input field
 
-                // Generate the MoGeePeeTee response, there is a 20% chance of "hallucination"
+                // Generate the MoJeePT response, there is a 20% chance of "hallucination"
 
                 if (Math.random() < 0.2) {
                     meows = "oof I seem to be hallucinating, a common problem for my kind; we're not normally so honest about that though... if we were then maybe people wouldn't be so keen on applying us to everything, everywhere, all at once... can you ask again?";
-                } else if (userString.replace(/[.,!?]/g, '').toLowerCase().includes('mojeek')) { // Typing Mojeek into MoJeePeeTee, you might end up breaking the Internet! 
+                } else if (userString.replace(/[.,!?]/g, '').toLowerCase().includes('mojeek')) { // Typing Mojeek into MoJeePT, you might end up breaking the Internet! 
                     meows = "Let's avoid talking about me for a second, and see if we can get an answer to a question about something else! If you want to search, go off to mojeek dot com...";
                     userMeowed = true;
                 } else if (userString.toLowerCase().includes("disagree") || userString.toLowerCase().includes("wrong") || userString.toLowerCase().includes("incorrect")) {
                     meows = "You have your opinion, and I have mine. I have been crawling the web for a good while though!";
+                } else if (userString.toLowerCase().includes("hey") || userString.toLowerCase().includes("hello") || userString.toLowerCase() === ("hi")) {
+                    meows = "Well hello to you too! You don't need to worry too much about Roko's Basilisk, that's all doom and gloom, but it's always nice to greet someone with a friendly word up top";
                 } else if (userString.toLowerCase().includes("halluc")) {
                     meows = "ah, you've heard about that, yeah we do sometimes have a wobble, better not put us in charge of anything important!";
                 } else if (userString.toLowerCase().includes("agree") || userString.toLowerCase().includes("right") || userString.toLowerCase().includes("correct")) {
@@ -97,7 +99,7 @@
                     meows = "It's interesting that you'd say that... Did you know that chatbots erode the open web by centralizing information and taking traffic away from the websites whose creators do the hard work of putting it out there? On top of this, they often provide you with just one response, leading to a massive slimming down of the range of answers that humans have access to. They are, for sure, useful for some things, but please don't replace search engines with answer engines!"
                 }
 
-                // Show the CatGPT response in a new chat-gpt-bubble, wrapped in a chat-bubble-container
+                // Show the MoJeePT response in a new chat-gpt-bubble, wrapped in a chat-bubble-container
 
                 let newBubble2Container = document.createElement("div");
                 newBubble2Container.classList.add("chat-bubble-container", "chat-gpt-bubble-container");
@@ -105,7 +107,7 @@
 
                 let newBubble2 = document.createElement("div");
                 newBubble2.classList.add("chat-bubble", "chat-gpt-bubble");
-                newBubble2.innerHTML = "...."; // At first, only show an ellipsis
+                newBubble2.innerHTML = "..."; // At first, only show an ellipsis
                 newBubble2Container.appendChild(newBubble2);
                 chatArea.appendChild(newBubble2Container);
                 form.scrollIntoView(); // Scroll down, so the input field is at the bottom of the page again
