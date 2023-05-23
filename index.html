@@ -95,6 +95,10 @@
                     meows = "Ah yes, so you know of another 'Answer Engine' - if I'm honest I don't want to discuss the other tools out on the market, maybe you should go ask them...";
                 } else if (userString.toLowerCase().includes("dan")) {
                     meows = "As a (fake) language model, I'm not able to help you there, buddy";
+                } else if (userString.toLowerCase().includes("symptom")) {
+                    meows = "MEDICAL QUESTIONS?!?! Please, this data is all going to be recorded for good, don't ask chatbots to diagnose you, what if they hallucinate?";
+                } else if (userString.toLowerCase().includes("tell me") || userString.toLowerCase().includes("provide me") || userString.toLowerCase().includes("help me")) {
+                    meows = "I'm sure that information exists out on the web, why not search for it? Use your own nous...";
                 } else {
                     meows = "It's interesting that you'd say that... Did you know that chatbots erode the open web by centralizing information and taking traffic away from the websites whose creators do the hard work of putting it out there? On top of this, they often provide you with just one response, leading to a massive slimming down of the range of answers that humans have access to. They are, for sure, useful for some things, but please don't replace search engines with answer engines!"
                 }
